@@ -39,7 +39,7 @@ mod my_module {
             let applied_string = match command {
                 Command::Uppercase => string.to_uppercase(),
                 Command::Trim => string.trim().to_string(),
-                Comamnd::Append(n) => format!("{}{}", string, "bar".repeat(*n))
+                Command::Append(n) => format!("{}{}", string, "bar".repeat(*n))
             };
 
             output.push(applied_string);
